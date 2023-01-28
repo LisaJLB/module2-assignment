@@ -1,9 +1,14 @@
 * {
 	box-sizing: border-box;
 }
+html {
+  font-family: 'Noto Sans', Helvetica, sans-serif;
+}
+body {
+  margin: 0 1em;
+}
 h1 {
   text-align: center;
-  font-family: Helvetica;
   color: black;
 }
 
@@ -18,9 +23,29 @@ li {
   border: 1px solid black;
   padding: 1em;
   margin-bottom: 1em;
+  position: relative;
 }
 
-#chicken {
+li h2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  border: 1px solid black;
+  border-top: 0;
+  border-right: 0;
+  margin: 0;
+  padding: 0 2em;
+}
+
+li p {
+  margin-top: 1.5em;
+}
+li p:last-child {
+  margin-bottom: 0;
+}
+
+#chicken h2 {
   background: pink;
 }
 
